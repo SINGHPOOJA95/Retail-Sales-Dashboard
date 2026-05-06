@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analysis</title>
+    <h1> overview</h1>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <ul class="nav-links">
+      <a href="#q1">Product Profitability</a>
+      <a href="#q2">Discount Impact </a>
+      <a href="#q3">Regional Performance</a>
+      <a href="#q4">Delivery Delay </a>
+      <a href="#q5">Customer Segment </a> 
+      </ul>
+      <section id="q1">
+      <div>
+       
+    <h2>Product Profitability Analysis</h2>
+    
+  
+      
+    {{graph_html|safe}}
+    </div>
+    </section>
+    <section id="q2">
+    <div>
+        <h2>Discount Impact on Profitability</h2>
+        {{graph_html_1|safe}}
+    </div>
+    </section>
+    <section id="q3">
+    <div>
+        <h2>Regional Sales Performance</h2>
+        {{graph_html_2|safe}}
+    </div>
+    </section>
+    <section id="q4">
+    <div>
+        <h2>Delivery Delay Analysis</h2>
+        {{graph_html_3|safe}}
+        
+    </div>
+    </section>
+    <section id="q5">
+    <div>
+        <h2>Customer Segment Insights</h2>
+        {{graph_html_4|safe}}
+    </div>
+    </section>
+</head>
+<body>
+    
+</body>
+</html>
